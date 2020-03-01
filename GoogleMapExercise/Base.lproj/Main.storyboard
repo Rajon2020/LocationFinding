@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="afy-aa-dyU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="GoogleMapExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2bd-8j-Svb">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="zvu-5l-gbf">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="BYZ-38-t0r" id="UIE-8u-at9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="7xp-CW-4PO" kind="custom" identifier="Back" customClass="SWRevealViewControllerSeguePushController" id="tUe-Nw-CaU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4398.5507246376819" y="50.892857142857139"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="Uek-fZ-nrj">
+            <objects>
+                <viewController storyboardIdentifier="StartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zqr-me-GOi" customClass="StartViewController" customModule="GoogleMapExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MeQ-Xb-3B3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pxx-zz-Nib">
+                                <rect key="frame" x="0.0" y="74" width="414" height="822"/>
+                                <color key="backgroundColor" red="0.58056698849999999" green="0.91696378940000001" blue="0.99440914390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="822" id="Pr4-Dd-SAC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pxx-zz-Nib" firstAttribute="leading" secondItem="NO0-a1-6V6" secondAttribute="leading" id="4xW-qM-0gG"/>
+                            <constraint firstItem="NO0-a1-6V6" firstAttribute="trailing" secondItem="Pxx-zz-Nib" secondAttribute="trailing" id="aS0-Hb-Dkh"/>
+                            <constraint firstItem="Pxx-zz-Nib" firstAttribute="top" secondItem="NO0-a1-6V6" secondAttribute="top" constant="-14" id="iXf-9b-8Al"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NO0-a1-6V6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kL7-el-bxv">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.horizontal.3" catalog="system" id="YGk-l7-5d9">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnMenuButton" destination="YGk-l7-5d9" id="Uzj-6M-Zew"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="anG-cK-UK5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3486.9565217391305" y="801.5625"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="dxP-xn-Tzo">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mU8-ts-hNC" customClass="HomeViewController" customModule="GoogleMapExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x9j-V8-QlG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bacground" translatesAutoresizingMaskIntoConstraints="NO" id="Psq-fT-KsO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="936"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="936" id="fGc-w2-F8k"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGI-dv-NuH">
+                                <rect key="frame" x="20" y="267" width="221" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58056698849999999" green="0.91696378940000001" blue="0.99440914390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Mosque">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="mosqueButonPressed:" destination="mU8-ts-hNC" eventType="touchUpInside" id="YuL-Js-aay"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cF-rs-Rw0">
+                                <rect key="frame" x="20" y="364" width="221" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58056698849999999" green="0.91696378940000001" blue="0.99440914390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Hospital">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="hospitalButtonPressed:" destination="mU8-ts-hNC" eventType="touchUpInside" id="tLd-TY-3cI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hn2-dF-Lx0">
+                                <rect key="frame" x="20" y="462" width="221" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58056698849999999" green="0.91696378940000001" blue="0.99440914390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Police Station">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="policeStationButtonPressed:" destination="mU8-ts-hNC" eventType="touchUpInside" id="UzC-kj-HtO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Waw-Ch-a1Z">
+                                <rect key="frame" x="20" y="561" width="221" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58056698849999999" green="0.91696378940000001" blue="0.99440914390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Resturant">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resturantButtonPressed:" destination="mU8-ts-hNC" eventType="touchUpInside" id="WiO-8x-DvN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfZ-Ka-iQ1">
+                                <rect key="frame" x="20" y="658" width="221" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58056698849999999" green="0.91696378940000001" blue="0.99440914390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Public toilet">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="publicToiletButtonPressed:" destination="mU8-ts-hNC" eventType="touchUpInside" id="Fut-hz-fAS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Psq-fT-KsO" secondAttribute="bottom" constant="-40" id="2aD-W1-1kk"/>
+                            <constraint firstItem="Psq-fT-KsO" firstAttribute="leading" secondItem="V5O-9m-Crp" secondAttribute="leading" id="93S-Ec-NGi"/>
+                            <constraint firstItem="Psq-fT-KsO" firstAttribute="top" secondItem="x9j-V8-QlG" secondAttribute="top" id="Cs7-HJ-BQx"/>
+                            <constraint firstItem="Psq-fT-KsO" firstAttribute="trailing" secondItem="V5O-9m-Crp" secondAttribute="trailing" id="Ir0-V2-Ria"/>
+                            <constraint firstItem="Psq-fT-KsO" firstAttribute="trailing" secondItem="V5O-9m-Crp" secondAttribute="trailing" id="V9u-ja-PCR"/>
+                            <constraint firstItem="Psq-fT-KsO" firstAttribute="leading" secondItem="V5O-9m-Crp" secondAttribute="leading" id="jPk-fi-90F"/>
+                            <constraint firstItem="Psq-fT-KsO" firstAttribute="top" secondItem="x9j-V8-QlG" secondAttribute="topMargin" constant="-44" id="yT0-Aa-QZc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V5O-9m-Crp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4PP-P0-Vx6"/>
+                    <connections>
+                        <outlet property="hospital" destination="1cF-rs-Rw0" id="udS-7k-U99"/>
+                        <outlet property="mosque" destination="qGI-dv-NuH" id="6t2-f8-eQP"/>
+                        <outlet property="policeStation" destination="hn2-dF-Lx0" id="rng-FX-D3r"/>
+                        <outlet property="publicToilet" destination="yfZ-Ka-iQ1" id="j5u-hm-zkb"/>
+                        <outlet property="resturant" destination="Waw-Ch-a1Z" id="96x-MI-0b7"/>
+                        <segue destination="DfS-nT-pD7" kind="custom" identifier="Mosque" customClass="SWRevealViewControllerSeguePushController" id="83m-FY-uSh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGw-19-XmS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2644.9275362318845" y="50.892857142857139"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="hd2-YH-ADY">
+            <objects>
+                <viewController storyboardIdentifier="SWRevealViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CiT-EE-Ptj" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vnl-7P-AqI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PAu-Q7-XY8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nC8-yp-RCU"/>
+                    <connections>
+                        <segue destination="7xp-CW-4PO" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="XaA-23-fpe"/>
+                        <segue destination="mU8-ts-hNC" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="zNn-tE-695"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hg2-Af-Tpm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231.8840579710145" y="631.47321428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kif-ni-eNO">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWs-hp-mFe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7xp-CW-4PO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qar-Ri-xfu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zqr-me-GOi" kind="relationship" relationship="rootViewController" id="wH0-Eq-ekF"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2576.811594202899" y="801.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VQl-qB-QCJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DfS-nT-pD7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LrS-Mg-ULu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2XX-ga-McA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKS-3x-GqC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3488.4057971014495" y="50.892857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pOo-BB-7GQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="afy-aa-dyU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PuF-xa-78y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CiT-EE-Ptj" kind="relationship" relationship="rootViewController" id="kn5-95-qGF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZR2-m0-Nti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321.73913043478262" y="631.47321428571422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bacground" width="1000" height="667"/>
+        <image name="line.horizontal.3" catalog="system" width="64" height="32"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="XaA-23-fpe"/>
+    </inferredMetricsTieBreakers>
+</document>
